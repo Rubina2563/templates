@@ -1,9 +1,15 @@
 import React from 'react';
 import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 const Header: React.FC = () => {
+  const navigate = useNavigate();
+
+   const handleNavigation = (path: string) => {
+    navigate(path);
+  };
   return (
-    <header className="bg-blue-500 text-white">
+    <header className="bg-blue-600 text-white">
       <div className=" bg-white px-4 py-2">
       <div className=" mx-10 flex justify-between items-center space-x-4">
   {/* First div */}
@@ -35,11 +41,11 @@ font-normal">
           <span className="text-neutral-50 text-[40px] font-medium text-xl">electema</span>
         </div>
         <ul className="flex items-center space-x-6 pr-16">
-          <li><a href="#" className=" text-neutral-50 text-base font-medium ">Home</a></li>
-          <li><a href="#" className="text-neutral-50 text-base font-medium hover:text-gray-300">About Us</a></li>
-          <li><a href="#" className="text-neutral-50 text-base font-medium hover:text-gray-300">Services</a></li>
-          <li><a href="#" className="text-neutral-50 text-base font-medium hover:text-gray-300">Page</a></li>
-          <li><a href="#" className="text-neutral-50 text-base font-medium hover:text-gray-300">Contact Us</a></li>
+          <li><button onClick={() => handleNavigation('/')} className=" text-neutral-50 text-base font-medium ">Home</button></li>
+          <li><button onClick={() => handleNavigation('/aboutus')} className="text-neutral-50 text-base font-medium hover:text-gray-300">About Us</button></li>
+          <li><button onClick={() => handleNavigation('/services')} className="text-neutral-50 text-base font-medium hover:text-gray-300">Services</button></li>
+          <li><button onClick={() => handleNavigation('/contactus')} className="text-neutral-50 text-base font-medium hover:text-gray-300">Page</button></li>
+          <li><button onClick={() => handleNavigation('/contactus')} className="text-neutral-50 text-base font-medium hover:text-gray-300">Contact Us</button></li>
           <li>  <button className="bg-lime-300 text-black px-4 py-2 rounded-2xl font-medium hover:bg-lime-500">
           Get Started
         </button></li>

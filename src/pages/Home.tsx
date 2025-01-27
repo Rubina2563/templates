@@ -1,8 +1,9 @@
 
+import Hero from '../components/home/Hero.tsx'
 
 const Home = () => {
   return (
-    <div>Home</div>
+   <Hero />
   )
 }
 

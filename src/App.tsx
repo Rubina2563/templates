@@ -1,31 +1,32 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from './pages/Home.tsx';
-import AboutUs from './pages/AboutUs.tsx';
-import ContactUs from './pages/ContactUs.tsx';
-import Services from './pages/Services.tsx';
-import City from './pages/City.tsx';
-import Header from './components/Header.tsx';
-import Footer from './components/Footer.tsx';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+import Services from './pages/Services';
+import City from './pages/City';
 
-const App = () => {
-  return (<>
-    <Header />
+const App: React.FC = () => {
+  return (
     <Router>
-      <div className="p-4">
+      <Header />
+      <main className="p-4">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/aboutus" element={<AboutUs />} />
-          <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/city" element={<City />} />
+          <Route path="/" element={<Outlet />}>
+            <Route index element={<Home />} />
+            <Route path="aboutus" element={<AboutUs />} />
+            <Route path="services" element={<Services />} />
+            <Route path="contactus" element={<ContactUs />} />
+            <Route path="city" element={<City />} />
+          </Route>
         </Routes>
-      </div>
+      </main>
+      <Footer />
     </Router>
-    <Footer />
-  </>
-   
-  )
-}
+  );
+};
 
-export default App
+export default App;

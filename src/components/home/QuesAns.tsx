@@ -4,15 +4,22 @@ const QuesAns = () => {
       <div className="bg-white py-16">
         <div className="max-w-screen-xl mx-auto px-4 flex flex-col lg:flex-row items-start gap-10">
           {/* FAQ Image */}
-          <div className="flex-1 flex justify-center items-center">
+          <div className="flex-1"> <div className="flex flex-col gap-3 justify-center ">
+            <p className="text-blue-600
+text-lg
+font-semibold">Questions & Answers</p> <h2 className="text-neutral-900
+text-5xl
+font-semibold">
+              Frequently Asked Questions
+            </h2>
+             
             <div className="w-80 h-80 bg-blue-300 rounded-lg"></div>
-          </div>
+          </div></div>
+         
 
           {/* FAQ Content */}
           <div className="flex-1 space-y-8">
-            <h2 className="text-3xl font-bold text-gray-900">
-              Frequently Asked Questions
-            </h2>
+          
             <div className="space-y-4">
               {/* Question Item */}
               {[1, 2, 3, 4].map((item) => (

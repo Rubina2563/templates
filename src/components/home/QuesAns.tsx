@@ -1,8 +1,8 @@
 const QuesAns = () => {
   return (
     <>     {/* FAQ Section */}
-      <div className="bg-white py-16">
-        <div className="max-w-screen-xl mx-auto px-4 flex flex-col lg:flex-row items-start gap-10">
+      <div className="bg-white p-16">
+        <div className="max-w-screen-xl mx-auto px-4 flex flex-col lg:flex-row items-start gap-20">
           {/* FAQ Image */}
           <div className="flex-1"> <div className="flex flex-col gap-3 justify-center ">
             <p className="text-blue-600
@@ -13,7 +13,7 @@ font-semibold">
               Frequently Asked Questions
             </h2>
              
-            <div className="w-80 h-80 bg-blue-300 rounded-lg"></div>
+            <div className="w-full h-96 mt-10 bg-blue-300 rounded-lg"></div>
           </div></div>
          
 
@@ -36,13 +36,16 @@ font-semibold">
             </div>
 
             {/* Help Section */}
-            <div className="bg-black text-white p-6 rounded-lg space-y-4">
+            <div className="bg-black text-white p-10 gap-3 rounded-xl  flex flex-col items-center">
               <h3 className="text-xl font-medium">Need More Help?</h3>
-              <p>
-                Call us at our hotline or contact us directly for more
-                assistance.
+              <p className="text-neutral-600
+text-lg
+font-semibold text-center">
+                Sem morbi netus mauris purus eros blandit tristique at maecenas. Eu tellus enim.
               </p>
-              <button className="px-6 py-3 bg-lime-300 text-black font-medium rounded-lg hover:bg-lime-400">
+              <button className="px-6 py-3 bg-lime-300 text-neutral-900
+text-sm
+font-medium rounded-3xl hover:bg-lime-400">
                 Contact Us
               </button>
             </div>

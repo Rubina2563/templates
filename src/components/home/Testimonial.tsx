@@ -53,25 +53,29 @@ const Testimonial: React.FC = () => {
   ];
 
   return (
-    <div className="bg-blue-50 py-16 px-4">
+    <div className="bg-blue-50 p-16 ">
       {/* Section Header */}
-      <div className="max-w-screen-xl mx-auto space-y-4 text-center">
+      <div className="text-blue-600
+text-lg
+font-medium ">
         <p className="text-blue-600 font-medium text-lg">Testimonial</p>
-        <h2 className="text-3xl font-bold text-gray-900">
+        <h2 className="text-neutral-900 w-md
+text-5xl
+font-semibold">
           What They Say About Our Service
         </h2>
       </div>
 
       {/* Testimonials */}
-      <div className="max-w-screen-xl mx-auto mt-12 flex flex-col lg:flex-row lg:flex-wrap justify-between gap-8">
+      <div className="  mt-12 flex  flex-wrap justify-between gap-2">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="flex flex-col bg-white shadow-lg rounded-xl p-6 w-full max-w-sm space-y-4"
+            className="flex flex-col bg-white shadow-lg rounded-xl p-6 gap-3 w-76 max-w-sm "
           >
             {/* Avatar */}
             <div className="flex items-center space-x-4">
-              <div className="w-12 h-12 bg-blue-300 rounded-full"></div>
+              <div className="w-12 h-12 bg-blue-500 rounded-md"></div>
               <div>
                 <h4 className="text-lg font-medium text-gray-900">
                   {testimonial.name}
@@ -83,13 +87,19 @@ const Testimonial: React.FC = () => {
             </div>
 
             {/* Issue */}
-            <p className="text-red-500 font-medium">{testimonial.issue}</p>
+            <p className="text-blue-600
+text-base
+font-medium">{testimonial.issue}</p>
 
             {/* Description */}
-            <p className="text-gray-700">{testimonial.description}</p>
+            <p className="text-neutral-600
+text-lg
+font-medium">{testimonial.description}</p>
 
             {/* Date */}
-            <p className="text-gray-500 text-sm">{testimonial.date}</p>
+            <p className="text-neutral-600
+text-lg
+font-medium">{testimonial.date}</p>
           </div>
         ))}
       </div>

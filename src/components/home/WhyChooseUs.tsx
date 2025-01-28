@@ -4,7 +4,7 @@ import { FiUsers } from "react-icons/fi";
 const WhyChooseUs = () => {
   return (
     <>   {/* Third Section */}
-      <div className="bg-blue-600 p-24 text-white">
+      <div className="bg-blue-600 p-16 text-white">
 
         <div className="max-w-screen-xl mx-auto px-4 flex flex-col gap-10 ">
           {/* Image Content */}      

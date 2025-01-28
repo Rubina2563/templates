@@ -9,7 +9,7 @@ const HeroSection: React.FC = () => {
   return (
     <div className='bg-blue-50 px-20 '>
       {/* First Section */}
-      <div className='max-w-screen-xl mx-auto px-4 py-20 flex flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-10 gap-16'>
+      <div className='max-w-screen-xl mx-auto px-16 py-20 flex flex-col lg:flex-row space-y-10 lg:space-y-0 lg:space-x-10 gap-16'>
         {/* Text Content */}
         <div className='flex-1 '>
           <p className="text-blue-600

@@ -4,7 +4,7 @@ const OurService: React.FC = () => {
   return (
     <div className='bg-blue-50'>
       {/* Our Services Section */}
-      <div className='max-w-screen-xl mx-auto px-4 py-16 space-y-12'>
+      <div className='max-w-screen-xl mx-auto px-16 py-16 space-y-12'>
         {/* Header */}
         <div className='flex '>
           <div className='flex-1'>

@@ -53,7 +53,7 @@ const Testimonial: React.FC = () => {
   ];
 
   return (
-    <div className="bg-blue-50 p-16 ">
+    <div className="p-6 md:p-12 lg:p-32 ">
       {/* Section Header */}
       <div className="text-blue-600
 text-lg
@@ -67,11 +67,11 @@ font-semibold">
       </div>
 
       {/* Testimonials */}
-      <div className="  mt-12 flex  flex-wrap justify-between gap-2">
+      <div className="  mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-between gap-3">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="flex flex-col bg-white shadow-lg rounded-xl p-6 gap-3 w-76 max-w-sm "
+            className="flex flex-col bg-white  rounded-xl p-6 gap-3 w-full  "
           >
             {/* Avatar */}
             <div className="flex items-center space-x-4">

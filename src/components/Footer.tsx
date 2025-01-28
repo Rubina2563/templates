@@ -4,10 +4,10 @@ import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
 const Footer: React.FC = () => {
   return (
     <footer className='bg-blue-600 text-white'>
-      <div className='px-14 py-8'>
-        <div className=' grid grid-cols-1 md:grid-cols-2 gap-14'>
+      <div className='px-4 md:px-8 lg:px-14 py-8'>
+        <div className=' grid grid-cols-1   lg:grid-cols-2 sm:gap-5 lg:gap-14 space-y-3'>
           {/* First div */}
-          <div>
+          <div className="sm:w-80 lg:w-1/2">
             <div className='mb-6 flex items-center space-x-2'>
               <img src='/logo.png' alt='Logo' className='h-8 w-8' />
               <span className='text-neutral-50 text-[40px] font-medium text-xl'>
@@ -34,7 +34,9 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Second div */}
-          <div className="grid grid-cols-2 gap-2">   <div className='grid grid-cols-2 gap-2'>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5 ">
+
+            <div className='grid grid-cols-2 sm:w-1/2 md:w-full gap-2'>
             <div>
               <h3 className='font-semibold mb-2'>Company</h3>
               <ul className='text-sm space-y-1'>
@@ -85,7 +87,8 @@ const Footer: React.FC = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+              </div>
+              
           </div>
 
           {/* Third div */}
@@ -98,7 +101,7 @@ const Footer: React.FC = () => {
               <input
                 type='email'
                 placeholder='Your email'
-                className='px-4 py-2  w-56 rounded-3xl text-black bg-neutral-50 placeholder:text-neutral-500'
+                className='px-4 py-2 sm:w-full sm:mr-3  lg:w-56 rounded-3xl text-black bg-neutral-50 placeholder:text-neutral-500'
               />
               <button
                 type='submit'

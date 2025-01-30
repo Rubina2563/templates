@@ -31,7 +31,7 @@ const QuesAns: React.FC = () => {
 
   return (
     <>     {/* FAQ Section */}
-      <div className="bg-gray-100 p-6 md:p-12 lg:p-32">
+      <div className="bg-neutral-50 p-6 md:p-12 lg:p-32">
         <div className="max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row items-start gap-6 lg:gap-20">
           {/* FAQ Image */}
           <div className="flex-1"> <div className="flex flex-col gap-3 justify-center ">

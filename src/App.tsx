@@ -13,7 +13,7 @@ const App: React.FC = () => {
   return (
     <Router>
       <Header />
-      <main className=" bg-gray-200">
+      <main className=" bg-gray-100">
         <Routes>
           <Route path="/" element={<Outlet />}>
             <Route index element={<Home />} />

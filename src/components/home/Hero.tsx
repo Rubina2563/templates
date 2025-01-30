@@ -4,7 +4,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import OurService from "./OurServices";
 import QuesAns from "./QuesAns";
 import Testimonial from "./Testimonial";
-
+import sampleImage from "../../uploads/sample.png";
 const HeroSection: React.FC = () => {
   return (
     <div >
@@ -25,14 +25,17 @@ font-semibold">Best Home Electrician Service</p>
             is in great hands. Experience personalized treatments and a warm
             environment, all tailored to meet your unique needs. Visit us today!
           </p>
-          <div className='mt-3 sm:w-full md:w-md h-40  bg-blue-600 rounded-lg'></div>
+          <div className='mt-3 sm:w-full md:w-md h-40  bg-blue-600 rounded-lg bg-cover bg-center' style={{ backgroundImage: `url(${sampleImage})` }} ></div>
         </div>
 
         {/* Image Content */}
     <div className="hidden md:block md:flex-1">   
-  <div className="h-96 sm:w-full  bg-blue-600 rounded-lg">
-    {/* Content Here */}
-  </div>
+ <div
+  className="h-96 sm:w-full bg-blue-600 rounded-lg bg-cover bg-center"
+style={{ backgroundImage: `url(${sampleImage})` }} 
+>
+  {/* Content Here */}
+</div>
 </div>
       
        

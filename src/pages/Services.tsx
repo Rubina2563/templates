@@ -13,8 +13,12 @@ const services = [
 ];
 
 const Services: React.FC = () => {
-  return (<>  <div className=" p-8 min-h-screen">
-      <div className="max-w-4xl mx-auto">
+  return (<>  <div >
+    <div className="p-6 md:p-12 lg:p-32">
+      <nav className="text-sm text-gray-500">
+        Home / <span className="text-black">Sevices</span>
+      </nav>
+      <h2 className="text-blue-600 font-semibold mt-4">Our Services</h2>
         <h2 className="text-3xl font-bold mb-4">Explore Our Wide Range of Services</h2>
         <p className="text-gray-600 mb-8">
           We have extensive experience in electrical and power-related services.

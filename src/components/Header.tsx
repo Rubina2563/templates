@@ -49,7 +49,7 @@ font-normal">
           <li><button onClick={() => handleNavigation('/')} className="text-neutral-50 text-base font-medium">Home</button></li>
           <li><button onClick={() => handleNavigation('/aboutus')} className="text-neutral-50 text-base font-medium hover:text-gray-300">About Us</button></li>
           <li><button onClick={() => handleNavigation('/services')} className="text-neutral-50 text-base font-medium hover:text-gray-300">Services</button></li>
-          <li><button onClick={() => handleNavigation('/contactus')} className="text-neutral-50 text-base font-medium hover:text-gray-300">Page</button></li>
+          <li><button onClick={() => handleNavigation('/city')} className="text-neutral-50 text-base font-medium hover:text-gray-300">Page</button></li>
           <li><button onClick={() => handleNavigation('/contactus')} className="text-neutral-50 text-base font-medium hover:text-gray-300">Contact Us</button></li>
           <li>
             <button className="bg-lime-300 text-black px-4 py-2 rounded-2xl font-medium hover:bg-lime-500">
@@ -75,7 +75,7 @@ font-normal">
             <li><button onClick={() => handleNavigation('/')} className="text-white text-lg">Home</button></li>
             <li><button onClick={() => handleNavigation('/aboutus')} className="text-white text-lg">About Us</button></li>
             <li><button onClick={() => handleNavigation('/services')} className="text-white text-lg">Services</button></li>
-            <li><button onClick={() => handleNavigation('/contactus')} className="text-white text-lg">Page</button></li>
+            <li><button onClick={() => handleNavigation('/city')} className="text-white text-lg">Page</button></li>
             <li><button onClick={() => handleNavigation('/contactus')} className="text-white text-lg">Contact Us</button></li>
             <li>
               <button className="bg-lime-300 text-black px-6 py-2 rounded-2xl font-medium hover:bg-lime-500">

@@ -2,7 +2,7 @@
 const GetService = () => {
   return (
       <>
-      <div className="bg-gray-100 p-6 md:p-12 lg:p-32">
+      <div className="bg-neutral-50 p-6 md:p-12 lg:p-32">
         <div className="max-w-screen-xl mx-auto text-center ">
           <p className="text-blue-600
 text-lg
